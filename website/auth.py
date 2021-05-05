@@ -97,5 +97,5 @@ class AdminView(ModelView):
 @auth.route('/admin')
 @login_required
 def admin():
-    pass
+    return render_template('admin.html', user=current_user)
 
